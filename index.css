@@ -1,0 +1,41 @@
+img {
+
+}
+#first_section {
+    background-image: url(images/jean.jpg);
+    background-size: cover;
+
+    height: 100vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    column-gap: 10px;
+    background-position: 49% 0;
+    text-align: left;
+    padding: 25px;
+
+}
+
+#first_section .section_wrapper {
+    position: absolute;
+    left: 20rem;
+    top: 20rem;
+}
+
+
+
+#first_section .section_wrapper p {
+
+    color: black;
+    font-size: 1.5rem;
+    background-color: #f2e10f;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        position: absolute;
+        left: -15rem;
+        font-size: 3rem;
+    }
+    }

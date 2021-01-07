@@ -1,0 +1,89 @@
+/*-------FONTE-----*/
+h2 {
+    font-size: 4rem;
+
+}
+
+h4 {
+    font-size: 2rem;
+/*     background-color: rgba(118, 118, 118, 0.09);*/
+}
+
+p {
+    font-size: 1.5rem;
+}
+/*mobile-version*/
+
+
+/*Laver størrelsen på alle billeder om til 100%*/
+
+img {
+    width: 100%;
+}
+
+/*web version*/
+
+@media only screen and (min-width: 600px) {
+
+    .first_section_container {
+        position: relative;
+        top: 9rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1px;
+
+        margin: 0;
+        left: 0;
+        text-align: left;
+        align-content: space-between;
+
+
+    }
+
+    .kolonneright {
+    top: -8rem;
+position: relative;
+    left: 10rem;
+        max-width: 5rem;
+}
+
+
+ .second_section_container {
+
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+
+        padding: 5rem;
+
+    }
+    .second_section_container h2 {
+        text-align: center;
+    }
+
+
+
+
+.third_section_container {
+     position: relative;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+
+        padding: 5rem;
+
+}
+
+.kolonne2{
+    position: relative;
+top: 9.4rem;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+}
