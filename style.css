@@ -81,6 +81,7 @@ p {
         display: flex;
         justify-content: center;
         padding: 0;
+        height: 11vh;
 
 
     }
@@ -96,6 +97,8 @@ p {
         text-decoration: none;
         font-size: 1.5rem;
         color: #ffffff;
+        top: 0.9rem;
+position: relative;
     }
 
     a:visited {
@@ -139,13 +142,19 @@ p {
 
 /*FJERNER LISTEMENU I MOBILE VERSION*/
 @media only screen and (max-width: 800px) {
+/*
     #navbar_design a {
         display: none;
     }
+*/
 
+    #navbar_design {
+        height: 4.5rem
+    }
 #navbar_design img{
+    top: 0.7rem;
         position: relative;
-        left: 9rem;
+        left: 9.3rem;
     }
 }
 
@@ -206,19 +215,20 @@ p {
 
 }
 
-.nav li a {
+.nav a {
     color: #ffffff;
     text-decoration: none;
     font-size: 2rem;
 }
 
-.nav li {
+.nav a {
     list-style: none;
-    padding: 3rem;
+
     margin-left: 2rem;
+    top: 4rem;
 }
 
-.nav li a:hover {
+.nav a:hover {
     font-weight: bold;
     color: #d09d14;
 }

@@ -26,9 +26,17 @@ video {
         width: 100vw;
     }
     video {
-        width: auto;
-        height: 80vh;
-        overflow: hidden;
+           height: 75vh;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    outline: none;
     }
+
+    .nav a:hover {
+    font-weight: bold;
+    color: #d09d14;
+}
+
 }
 
