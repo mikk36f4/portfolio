@@ -1,13 +1,14 @@
 /*BAGGRUNDS FARVE*/
 body {
-    background-color: rgb(255, 245, 228);
+    background-color: #fffcf9
 }
+
 /*FONT RULES*/
 h1 {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 5rem;
-    background-color: black;
+
 
 }
 
@@ -18,7 +19,7 @@ h2 {
 }
 
 a {
-     color: white;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -36,11 +37,12 @@ p {
 
 @media only screen and (min-width: 800px) {
 
-/*    MAIN*/
+    /*    MAIN*/
 
-    body{
+    body {
         margin: 0;
     }
+
     main {
         margin: 0;
     }
@@ -51,25 +53,34 @@ p {
         width: 5rem;
     }
 
+    .menu_img {
+                background-color: black
+    }
 
     #navbar {
         display: inline-block;
-        background-color: rgba(108, 108, 108, 0.13);
+        background: rgb(0, 0, 0);
 
     }
 
     header {
+        display: flex;
         width: 100vw;
 
-        position: fixed;
+        position: absolute;
         display: flex;
         justify-content: center;
         z-index: 1;
         word-spacing: 1rem;
+
     }
 
     #navbar_design {
         width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
 
     }
 
@@ -83,11 +94,11 @@ p {
         text-align: center;
         text-decoration: none;
         font-size: 1.5rem;
-        color: #000000;
+        color: #ffffff;
     }
 
     a:visited {
-        color: #000000;
+        color: #ffffff;
     }
 
     a:active {
@@ -95,28 +106,31 @@ p {
     }
 
     #menubar {
-        display: none;
+        /*        display: none;*/
     }
 
 
-/*--------FOOTER DESIGN--------*/
-    footer{
-         padding: 0.2rem;
+    /*--------FOOTER DESIGN--------*/
+    footer {
+        padding: 0.2rem;
     }
-.footer_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1rem;
 
-}
-    .footer_section h2{
+    .footer_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+
+    }
+
+    .footer_section h2 {
         font-size: 1rem;
     }
-    .footer_section li{
+
+    .footer_section li {
         font-size: 0.8rem;
     }
 
-    }
+}
 
 
 /*MOBILE VERSION*/
@@ -124,8 +138,13 @@ p {
 
 /*FJERNER LISTEMENU I MOBILE VERSION*/
 @media only screen and (max-width: 800px) {
-    #navbar_design a{
+    #navbar_design a {
         display: none;
+    }
+
+#navbar_design img{
+        position: relative;
+        left: 9rem;
     }
 }
 
@@ -142,7 +161,7 @@ p {
 .bar {
     height: 0.3rem;
     width: 100%;
-    background-color: black;
+    background-color: #ffffff;
     display: block;
     border-radius: 1rem;
     transition: 0.4s ease;
@@ -183,10 +202,11 @@ p {
     position: fixed;
     z-index: -2;
 
+
 }
 
 .nav li a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 2rem;
 }
@@ -199,14 +219,14 @@ p {
 
 .nav li a:hover {
     font-weight: bold;
-    color: white;
+    color: #d09d14;
 }
 
 /*-----------BURGER MENU DESIGN-----------*/
 
 .menu_img,
 #menubar {
-    top: 0;
+    top: -0.5rem;
     left: 0;
     position: absolute;
 }
@@ -215,7 +235,7 @@ p {
     z-index: 1;
     width: 0;
     height: 0;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0);
     transition: 0.3s ease;
 }
 
@@ -230,21 +250,24 @@ p {
 
 .change {
     display: block;
+
 }
 
 /*-----------footer design, mobil-----------*/
-footer a{
+footer a {
     text-decoration: none;
     color: white;
 }
 
 footer {
     color: white;
-    background-color: rgba(34, 185, 115, 0.74);
+    background-color: rgb(0, 0, 0);
     text-align: center;
-    position:relative;
+    position: relative;
     bottom: 0;
     width: 100vw;
+    height: 4rem;
+    padding-top: 1.5rem;
 }
 
 .footer_item h2 {
@@ -264,6 +287,3 @@ footer ul {
 .resident_li a {
     color: #000000;
 }
-
-
-

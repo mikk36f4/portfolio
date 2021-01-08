@@ -1,89 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*Laver størrelsen på alle billeder om til 100%*/
+
+img {
+    width: 100%;
+/*    border-radius: 10px;*/
+}
+
 /*-------FONTE-----*/
+h1 {
+
+    color: black
+
+}
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
+
+}
+
+h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.26);
+    text-align: center;
 
 }
 
 h4 {
     font-size: 2rem;
-/*     background-color: rgba(118, 118, 118, 0.09);*/
+    /*     background-color: rgba(118, 118, 118, 0.09);*/
 }
 
 p {
     font-size: 1.5rem;
 }
-/*mobile-version*/
 
+/*.-..-.-.-.-.-KNAPPE-DESIGN.-.-.-.-.-.-.-.-.*/
 
-/*Laver størrelsen på alle billeder om til 100%*/
-
-img {
-    width: 100%;
+main a {
+    background-color:#d09d14;
+	border-radius:28px;
+	border:1px solid #d09d14;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px rgba(180, 180, 180, 0);
+    text-align: center;
 }
 
-/*web version*/
+main a:hover {
+    background-color: #ffbc07
+}
 
-@media only screen and (min-width: 600px) {
+/*.-.-.-.-.-.-.-.-.-.-mobile-version.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+
+@media only screen and (max-width: 799px) {
+    #navbar {
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    width: 100vw;
+        margin: 0;
+        padding: 0;
+}
+
+    #navbar_design img {
+        position: relative;
+        left: 6.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+    .nav li {
+        background-color: black;
+        left: 0;
+        margin-left: -3rem;
+        margin-top: -1rem;
+    }
+}
+
+/*-.-.-.-.-.-.-.-web version.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-*/
+
+
+@media only screen and (min-width: 800px) {
+
+/*
+    FIX NAV BAGGRUND PÅ WEB
+    .change {
+    background-color: black;
+top: 4rem;
+*/
+
+    .nav li {
+        background-color: black;
+        left: 0;
+        margin-left: -3rem;
+        margin-top: -3rem;
+    }
+     h1 {
+        text-align: center;
+    }
+
+    #first_section {
+        padding-top: 3rem;
+    }
 
     .first_section_container {
         position: relative;
-        top: 9rem;
+
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 1px;
-
-        margin: 0;
-        left: 0;
-        text-align: left;
-        align-content: space-between;
-
-
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        padding: 0rem 5rem 1rem 5rem;
     }
 
-    .kolonneright {
-    top: -8rem;
-position: relative;
-    left: 10rem;
-        max-width: 5rem;
-}
-
-
- .second_section_container {
-
+    .kolonneleft {
         position: relative;
+        top: 5rem;
+    }
+
+
+    .second_section_container {
+
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2rem;
 
-        padding: 5rem;
+        padding: 0rem 5rem 1rem 5rem;
 
     }
+
     .second_section_container h2 {
         text-align: center;
     }
 
+    .third_section_container {
 
-
-
-.third_section_container {
-     position: relative;
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
 
-        padding: 5rem;
 
-}
+        padding: 0rem 5rem 1rem 5rem;
 
-.kolonne2{
-    position: relative;
-top: 9.4rem;
-}
+    }
+
+    .fourth_section_container {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+
+
+        padding: 0rem 5rem 5rem 5rem;
+
+    }
 
 
 
-h1 {
-    text-align: center;
-}
+
 
 }
