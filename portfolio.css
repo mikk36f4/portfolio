@@ -31,11 +31,13 @@ h3 {
 
 h4 {
     font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
     /*     background-color: rgba(118, 118, 118, 0.09);*/
 }
 
 p {
     font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 
