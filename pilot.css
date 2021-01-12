@@ -154,7 +154,6 @@ top: 4rem;
 
     .first_section_container {
         position: relative;
-        padding-top: -3rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
@@ -176,7 +175,6 @@ top: 4rem;
 
   .second_section_container {
         position: relative;
-        padding-top: -3rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
