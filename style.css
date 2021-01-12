@@ -1,6 +1,7 @@
 /*BAGGRUNDS FARVE*/
 body {
-    background-color: #fffcf9
+    background-color: #fffcf9;
+        overflow-x: hidden;
 }
 
 /*FONT RULES*/
@@ -116,7 +117,10 @@ position: relative;
 
     /*--------FOOTER DESIGN--------*/
     footer {
-        padding: 0.2rem;
+
+
+        font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
     }
 
     .footer_section {
@@ -209,7 +213,7 @@ position: relative;
 
 .nav {
     display: none;
-    position: fixed;
+
     z-index: -2;
 
 
